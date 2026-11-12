@@ -7,7 +7,7 @@ Ce dépôt recense les projets que des développeurs amateurs construisent autou
 - **Avancement** : une phrase écrite par vous. Aucun outil ne peut la deviner, merci de la mettre à jour quand elle change.
 - **Aucune adresse électronique ni téléphone** dans les fiches.
 
-Page web : voir l'onglet Pages du dépôt (adresse à indiquer ici une fois publiée).
+Page web : https://algoculture.github.io/otf-communaute-projets/
 
 Pour ajouter votre projet, lisez [CONTRIBUTING.md](CONTRIBUTING.md).
 
