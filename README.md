@@ -25,6 +25,6 @@ _Mis à jour le 12/11/2026._
 _Aucune fonction partagée pour l'instant._
 <!-- REGISTRE:FIN -->
 
-## Licences
+## Licence
 
-Code : MIT ([LICENSE](LICENSE)). Fiches : voir [LICENSE-DATA.md](LICENSE-DATA.md).
+Code et fiches : [PolyForm Shield 1.0.0](LICENSE), la même licence que le module d'irrigation. Chaque auteur de fiche garde le droit de la retirer à tout moment.
