@@ -18,6 +18,7 @@ _Mis à jour le 12/11/2026._
 
 | Projet | Personnes | Activité | Étape | Avancement | Fonctions |
 |---|---|---|---|---|---|
+| [Module d'irrigation pour Ouvre ta ferme](https://github.com/lechampdelaurore-boop/module-irrigation-otf-public) | François | 🟢 actif<br><sub>sans commit depuis 0 jours</sub> | utilisable | Besoin en eau, planning, réserve du sol et alertes gel en service ; gestion des pénuries d'eau en finition ; démo guidée ensuite. | besoin en eau, planning d'arrosage, réserve du sol, alertes gel, alertes cultures |
 
 ### Fonctions suivies par plusieurs projets
 

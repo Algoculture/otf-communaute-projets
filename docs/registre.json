@@ -1,4 +1,31 @@
 {
   "genere_le": "2026-11-12",
-  "projets": []
+  "projets": [
+    {
+      "id": "module-irrigation-otf",
+      "nom": "Module d'irrigation pour Ouvre ta ferme",
+      "objet": "Conseil et planification d'arrosage pour maraîchers, multi-fermes, branché sur Ouvre ta ferme",
+      "personnes": [
+        "François"
+      ],
+      "depot": "lechampdelaurore-boop/module-irrigation-otf-public",
+      "lien": null,
+      "etape": "utilisable",
+      "avancement": "Besoin en eau, planning, réserve du sol et alertes gel en service ; gestion des pénuries d'eau en finition ; démo guidée ensuite.",
+      "fonctions": [
+        "besoin en eau",
+        "planning d'arrosage",
+        "réserve du sol",
+        "alertes gel",
+        "alertes cultures"
+      ],
+      "mis_a_jour": "2026-11-12",
+      "a_relire": false,
+      "statut": "actif",
+      "declare": false,
+      "jours": 0,
+      "commit_date": "2026-11-12",
+      "raison": "sans commit depuis 0 jours"
+    }
+  ]
 }

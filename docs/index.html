@@ -5,7 +5,7 @@
 th{cursor:pointer;background:#f3f3f3}small{color:#666}input{padding:6px;margin:8px 0;width:100%;max-width:320px}</style></head><body>
 <h1>Projets de la communauté Ouvre ta ferme</h1><p>Mis à jour le 12/11/2026. Cliquez sur une colonne pour trier.</p>
 <input id="f" placeholder="Filtrer (fonction, personne...)" oninput="filtre()">
-<div class="t"><table id="t"><thead><tr><th>Projet</th><th>Personnes</th><th>Activité</th><th>Étape</th><th>Avancement</th><th>Fonctions</th></tr></thead><tbody></tbody></table></div>
+<div class="t"><table id="t"><thead><tr><th>Projet</th><th>Personnes</th><th>Activité</th><th>Étape</th><th>Avancement</th><th>Fonctions</th></tr></thead><tbody><tr><td><a href="https://github.com/lechampdelaurore-boop/module-irrigation-otf-public">Module d&#x27;irrigation pour Ouvre ta ferme</a><br><small>Conseil et planification d&#x27;arrosage pour maraîchers, multi-fermes, branché sur Ouvre ta ferme</small></td><td>François</td><td data-v='actif'>🟢 actif<br><small>sans commit depuis 0 jours</small></td><td>utilisable</td><td>Besoin en eau, planning, réserve du sol et alertes gel en service ; gestion des pénuries d&#x27;eau en finition ; démo guidée ensuite.</td><td>besoin en eau, planning d&#x27;arrosage, réserve du sol, alertes gel, alertes cultures</td></tr></tbody></table></div>
 <h2>Fonctions suivies par plusieurs projets</h2><ul><li>Aucune fonction partagée pour l'instant.</li></ul>
 <script>
 function filtre(){var q=document.getElementById('f').value.toLowerCase();document.querySelectorAll('#t tbody tr').forEach(function(r){r.style.display=r.textContent.toLowerCase().indexOf(q)<0?'none':''})}
