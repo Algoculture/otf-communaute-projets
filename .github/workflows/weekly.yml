@@ -1,0 +1,51 @@
+name: Registre hebdomadaire
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # chaque lundi, 06 h 00 UTC
+  workflow_dispatch:
+    inputs:
+      envoyer_discord:
+        description: "Envoyer le résumé sur Discord ?"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: registre
+  cancel-in-progress: false
+jobs:
+  registre:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - run: python scripts/validate.py
+      - run: python scripts/build_registre.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Commit du README seulement s'il a changé. Si la branche principale est
+      # protégée, supprimer cette étape : la page Pages suffit.
+      - name: Enregistrer le tableau du README
+        run: |
+          git config user.name "registre-bot"
+          git config user.email "registre-bot@users.noreply.github.com"
+          git add README.md docs/
+          git diff --cached --quiet || (git commit -m "Mise à jour hebdomadaire du registre" && git push)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: docs}
+      - id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Résumé Discord
+        if: github.event_name == 'schedule' || inputs.envoyer_discord
+        run: python scripts/post_discord.py
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          URL_PAGE: ${{ steps.deploy.outputs.page_url }}

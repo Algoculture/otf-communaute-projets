@@ -1,0 +1,16 @@
+# Copiez ce fichier en projets/<votre-identifiant>.yml (minuscules, chiffres, tirets) et remplissez-le.
+# N'écrivez jamais d'adresse électronique ni de numéro de téléphone.
+nom: Nom de votre projet
+objet: Une phrase sur ce que fait le projet (140 caractères maximum)
+personnes:
+  - pseudo: votre_pseudo        # pseudo Discord ou nom que vous choisissez
+    role: développeur
+depot: proprietaire/depot       # dépôt GitHub public, ou "prive", ou "aucun"
+lien: ~                         # facultatif : démo ou page du projet
+etape: idee                     # idee | prototype | utilisable | production
+avancement: "Où en est le projet, en une ou deux phrases (200 caractères maximum)."
+fonctions:                      # facultatif, aide à repérer les doublons
+  - besoin en eau
+statut_force: ~                 # laisser vide ; sinon actif | en_pause | abandonne
+statut_force_jusqua: ~          # facultatif, AAAA-MM-JJ
+mis_a_jour: 2026-11-12          # date de votre dernière relecture

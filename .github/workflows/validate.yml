@@ -1,0 +1,16 @@
+name: Valider les fiches
+on:
+  pull_request:
+    paths: ["projets/**", "scripts/**", "tests/**"]
+permissions:
+  contents: read
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - run: python scripts/validate.py
+      - run: python -m pytest -q tests

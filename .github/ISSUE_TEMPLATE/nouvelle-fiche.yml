@@ -1,0 +1,38 @@
+name: Nouvelle fiche
+description: Proposer votre projet sans passer par une pull request
+title: "Nouvelle fiche : "
+body:
+  - type: input
+    id: nom
+    attributes: {label: Nom du projet}
+    validations: {required: true}
+  - type: input
+    id: objet
+    attributes: {label: "À quoi sert-il ? (140 caractères)"}
+    validations: {required: true}
+  - type: input
+    id: personnes
+    attributes: {label: "Pseudos des personnes associées (séparés par des virgules)", description: "Pas d'adresse électronique."}
+    validations: {required: true}
+  - type: input
+    id: depot
+    attributes: {label: "Dépôt GitHub public (proprietaire/depot), ou « prive », ou « aucun »"}
+    validations: {required: true}
+  - type: dropdown
+    id: etape
+    attributes: {label: Étape, options: [idee, prototype, utilisable, production]}
+    validations: {required: true}
+  - type: textarea
+    id: avancement
+    attributes: {label: "Où en est le projet ? (200 caractères)"}
+    validations: {required: true}
+  - type: input
+    id: fonctions
+    attributes: {label: "Fonctions couvertes (séparées par des virgules)"}
+  - type: checkboxes
+    id: accord
+    attributes:
+      label: Accord
+      options:
+        - label: Je suis d'accord pour que cette fiche soit publique.
+          required: true

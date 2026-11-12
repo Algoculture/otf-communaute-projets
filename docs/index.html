@@ -1,0 +1,13 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projets de la communauté OTF</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;margin:0 auto;max-width:1100px;padding:16px}
+.t{overflow-x:auto}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top}
+th{cursor:pointer;background:#f3f3f3}small{color:#666}input{padding:6px;margin:8px 0;width:100%;max-width:320px}</style></head><body>
+<h1>Projets de la communauté Ouvre ta ferme</h1><p>Mis à jour le 12/11/2026. Cliquez sur une colonne pour trier.</p>
+<input id="f" placeholder="Filtrer (fonction, personne...)" oninput="filtre()">
+<div class="t"><table id="t"><thead><tr><th>Projet</th><th>Personnes</th><th>Activité</th><th>Étape</th><th>Avancement</th><th>Fonctions</th></tr></thead><tbody></tbody></table></div>
+<h2>Fonctions suivies par plusieurs projets</h2><ul><li>Aucune fonction partagée pour l'instant.</li></ul>
+<script>
+function filtre(){var q=document.getElementById('f').value.toLowerCase();document.querySelectorAll('#t tbody tr').forEach(function(r){r.style.display=r.textContent.toLowerCase().indexOf(q)<0?'none':''})}
+document.querySelectorAll('#t th').forEach(function(h,i){h.onclick=function(){var b=document.querySelector('#t tbody'),r=Array.from(b.rows);r.sort(function(x,y){return x.cells[i].textContent.localeCompare(y.cells[i].textContent,'fr')});r.forEach(function(x){b.appendChild(x)})}});
+</script></body></html>
