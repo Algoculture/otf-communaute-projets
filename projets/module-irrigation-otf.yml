@@ -1,0 +1,15 @@
+nom: Module d'irrigation pour Ouvre ta ferme
+objet: Conseil et planification d'arrosage pour maraîchers, multi-fermes, branché sur Ouvre ta ferme
+personnes:
+  - pseudo: François
+    role: porteur du projet, testeur sur sa ferme
+depot: lechampdelaurore-boop/module-irrigation-otf-public
+etape: utilisable
+avancement: "Besoin en eau, planning, réserve du sol et alertes gel en service ; gestion des pénuries d'eau en finition ; démo guidée ensuite."
+fonctions:
+  - besoin en eau
+  - planning d'arrosage
+  - réserve du sol
+  - alertes gel
+  - alertes cultures
+mis_a_jour: 2026-11-12
