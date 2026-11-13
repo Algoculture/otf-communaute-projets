@@ -11,6 +11,8 @@ Page web : https://algoculture.github.io/otf-communaute-projets/
 
 Pour ajouter votre projet, lisez [CONTRIBUTING.md](CONTRIBUTING.md).
 
+Si vous travaillez avec un assistant Claude, donnez-lui [CLAUDE-CONNECTER-UN-PROJET.md](CLAUDE-CONNECTER-UN-PROJET.md) : il y trouve les consignes pour relier votre projet au registre.
+
 ## Le registre
 
 <!-- REGISTRE:DEBUT -->
