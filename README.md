@@ -16,7 +16,7 @@ Si vous travaillez avec un assistant Claude, donnez-lui [CLAUDE-CONNECTER-UN-PRO
 ## Le registre
 
 <!-- REGISTRE:DEBUT -->
-_Mis à jour le 12/11/2026._
+_Mis à jour le 16/11/2026._
 
 | Projet | Personnes | Activité | Étape | Avancement | Fonctions |
 |---|---|---|---|---|---|
